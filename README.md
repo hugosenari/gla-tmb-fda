@@ -1,7 +1,9 @@
 Gla Tmb Fda
 ===========
 
-AWS Lambda API for GTFS
+AWS Lambda API for [GTFS](https://en.wikipedia.org/wiki/General_Transit_Feed_Specification)
+
+Current GTF from [sptrans](http://www.sptrans.com.br/desenvolvedores/GTFS.aspx)
 
 Requirements
 ------------
