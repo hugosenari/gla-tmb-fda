@@ -1,5 +1,5 @@
 Gla Tmb Fda
-==============================
+===========
 
 AWS Lambda API for GTFS
 
@@ -12,13 +12,11 @@ on macOS using [Homebrew](https://brew.sh) by typing `$ brew install pipenv`.
 Installation
 ------------
 
-This project uses [Chalice](http://chalice.readthedocs.io/en/latest/) to deploy to AWS
-lambda. Chalice provides a Flask-like API to declare the entry points of your serverless
-infrastructure. Chalice is installed in an isolated environment by running:
+This project uses [Zappa](https://github.com/Miserlou/Zappa) to deploy to AWS
+lambda. Zappa is installed in an isolated environment by running:
 
     ```
-    pipenv install --skip-lock
-    pipenv install 'attrs>=17.4.0'
+    pipenv install
     ```
 
 Testing
@@ -33,12 +31,12 @@ Uses pytest. To run the whole test suite:
 Deployment
 ----------
 
-See [Chalice documentation](http://chalice.readthedocs.io/en/latest/quickstart.html#credentials),
-you will need to have your AWS credentials setup, and then you can run Chalice inside of your
+See [Zappa documentation](https://github.com/Miserlou/Zappa),
+you will need to have your AWS credentials setup, and then you can run Zappa inside of your
 virtualenv:
 
     ```
-    pipenv run chalice deploy
+    pipenv run zappa deploy
     ```
 
 Credits
