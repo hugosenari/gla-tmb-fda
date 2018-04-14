@@ -162,7 +162,7 @@ def stop_trip_get(uid):
 @as_json
 def index():
     endpoint = lambda rule: rule.endpoint\
-        .replace('jsonify_of_', '')\
+        .replace('jsonify_of_', '/')\
         .replace('_get', '/id')
     
     return list(map(endpoint, app.url_map.iter_rules()))
